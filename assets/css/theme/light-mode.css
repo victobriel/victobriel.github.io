@@ -1,0 +1,7 @@
+.light-mode:root {
+    --bg-main-color: #FAFAFA;
+    --main-font-color: #303030;
+    --button-theme-font-color: #303030;
+    /* --button-theme-color: #FFCC33; */
+    --button-theme-color: #e4bf51;
+}

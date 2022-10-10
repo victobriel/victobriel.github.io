@@ -1,0 +1,38 @@
+.l-main {
+    padding: 4rem 0;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+}
+
+.main__sub {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.main__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.fa-solid {
+    margin-left: 1rem;
+}
+
+.main__image___image {
+    width: 368px;
+    border-radius: 50%;
+}

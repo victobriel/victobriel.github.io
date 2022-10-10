@@ -1,0 +1,29 @@
+.is-disabled {
+    pointer-events: none;
+    background: var(--disabled-background-color);
+    color: var(--disabled-font-color);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-invisible {
+    visibility: hidden;
+}
+
+.slider.is-round {
+    border-radius: 34px;
+}
+
+.slider.is-round:before {
+    border-radius: 34px;
+}
+
+.narrow {
+    max-width: 1440px;
+}
+
+.narrow.center {
+    margin: 0 auto;
+}

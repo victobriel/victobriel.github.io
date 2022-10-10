@@ -1,0 +1,71 @@
+.m-theme-switch {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    border-radius: 10px;
+    align-items: center;
+    /* Out of rules */
+    height: 18px;
+    width: 36px;
+    margin: 0 auto;
+}
+
+.m-theme-switch input {
+    opacity: 0;
+}
+
+.m-theme-switch input:checked + .slider {
+    background-color: var(--button-theme-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.m-theme-switch input:checked + .slider::before {
+    transform: translateX(-18px);
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-theme-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    right: 2px;
+    bottom: 2px;
+    background-color: hsl(198, 39%, 29%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.fa-moon,
+.fa-sun {
+    position: absolute;
+}
+
+.fa-sun {
+    right: 40px;
+    color: var(--disabled-font-color);
+}
+
+.fa-moon {
+    left: 30px;
+    color: var(--button-theme-color);
+}
+
+html.light-mode .fa-sun {
+    color: var(--button-theme-color);
+}
+
+html.light-mode .fa-moon {
+    color: var(--disabled-font-color);
+}

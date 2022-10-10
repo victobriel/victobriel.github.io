@@ -1,0 +1,40 @@
+.l-navbar {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar__title::after {
+    content: 'Vict.r';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.navbar__list___item:hover {
+    animation: balance .4s infinite;
+}
+
+@keyframes balance {
+    0%, 100% {
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+}
+
+.navbar__list___item:last-child {
+    width: 85px;
+}
+
+.navbar__list___item:last-child:hover {
+    animation: none;
+}

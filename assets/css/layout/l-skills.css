@@ -1,6 +1,5 @@
 .l-skills {
-    padding: 2rem 0;
-    height: 380px;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +15,9 @@
         "container-imagem"
         "container-text";
     grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
     grid-gap: .5rem;
+    justify-content: center;
 }
 
 .skills__container___item {
@@ -27,6 +28,12 @@
     height: 174px;
     padding: 20px;
     gap: 10px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,.5));
+}
+
+.skills__container___item:hover {
+    transform: translateY(-15px);
 }
 
 .skills__container___text {
@@ -34,6 +41,7 @@
     color: #18192B;
     font-weight: 700;
     text-transform: lowercase;
+    word-wrap: break-word;
 }
 
 .skills__container___image {

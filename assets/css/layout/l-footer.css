@@ -1,0 +1,22 @@
+.l-footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #303030;
+    align-items: center;
+}
+
+.l-footer h3::after {
+    content: 'Vict.r';
+    font-size: 22px;
+}
+
+.l-footer p {
+    font-size: 12px;
+    color: white;
+}
+
+.l-footer a {
+    text-decoration: underline;
+    color: white;
+}

@@ -1,14 +1,12 @@
 .l-aboutme {
-    padding: 2rem 0;
+    padding: 4rem 0;
     background-color: var(--button-theme-color);
-    height: 380px;
 }
 
 .l-aboutme .narrow {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 100%;
     justify-content: center;
 }
 

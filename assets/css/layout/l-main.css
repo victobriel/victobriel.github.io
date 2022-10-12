@@ -3,6 +3,7 @@
     display: flex;
     gap: 5rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 .main__container {
@@ -26,6 +27,10 @@
 .main__list {
     display: flex;
     gap: 2rem;
+}
+
+.main__list___item:hover {
+    transform: translateY(5px);
 }
 
 .fa-solid {

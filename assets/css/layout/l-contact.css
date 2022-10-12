@@ -1,12 +1,17 @@
 .l-contact {
-    padding: 6rem 0;
+    padding: 4rem 0;
     display: flex;
     gap: 1rem;
 }
 
 .contact__image {
-    width: 464px;
-    height: 593px;
+    max-width: 464px;
+    flex-shrink: 2;
+}
+
+.contact__image___image {
+    width: 100%;
+    height: 100%;
 }
 
 .contact__container {
@@ -37,6 +42,10 @@
     border-bottom: solid 4px var(--button-theme-color);
 }
 
+.contact__form .contact__form___button:focus {
+    border: none;
+}
+
 .relative {
     display: flex;
     flex-direction: column;
@@ -47,7 +56,7 @@
     position: absolute;
     color: var(--disabled-font-color);
     font-size: 12px;
-    top: 10px;
+    top: 5px;
     left: 13px;
     z-index: 1;
 }
@@ -74,8 +83,13 @@
 
 .contact__form___button {
     height: 3rem;
-    width: 30%;
+    width: 45%;
     background-color: var(--button-theme-color);
     filter: none !important;
     color: var(--button-theme-font-color);
+    cursor: pointer;
+}
+
+.contact__form___button:hover {
+    transform: translateY(2px);
 }

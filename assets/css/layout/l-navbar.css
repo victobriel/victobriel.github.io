@@ -11,15 +11,19 @@
     font-weight: bold;
 }
 
+footer header {
+    order: 1;
+}
+
 .navbar__list {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     align-items: center;
     text-transform: lowercase;
 }
 
 .navbar__list___item:hover {
-    animation: balance .4s infinite;
+    animation: balance .5s infinite;
 }
 
 @keyframes balance {

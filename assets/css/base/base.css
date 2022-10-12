@@ -1,17 +1,37 @@
+* {
+    transition: .5s;
+}
+
+html {
+    background-size: cover;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--bg-main-color);
     font-family: 'Raleway', sans-serif;
 }
 
-textarea {
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: .1;
+}
+
+input, textarea {
     font-family: 'Raleway', sans-serif;
 }
 
-body::after {
+/* body::after {
     content: '';
-    height: 100vh;
     background-image: url(../../img/bg.jpg);
+    background-size: cover;
+    background-position: fixed;
+
     position: absolute;
     top: 0;
     right: 0;
@@ -19,9 +39,7 @@ body::after {
     bottom: 0;
     z-index: -1;
     opacity: .1;
-    background-size: cover;
-    background-attachment: fixed;
-}
+} */
 
 h1, h2, h3, h4, h5, h6, p, label {
     color: var(--main-font-color);

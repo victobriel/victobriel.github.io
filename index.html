@@ -17,14 +17,17 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-skills.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-projects.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-contact.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-footer.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/module/theme-switch.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/state/is.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/theme/dark-mode.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/theme/light-mode.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/responsive.css">
     <title>Portfolio</title>
 </head>
 
 <body>
+    <img class="bg" src="./assets/img/bg.jpg" alt="">
     <section class="l-navbar narrow center">
         <header>
             <h3 class="navbar__title"></h3>
@@ -50,124 +53,128 @@
             </ul>
         </nav>
     </section>
-    <main>
-        <section class="l-main narrow center">
-            <div class="main__container">
-                <h2 class="main__title">Olá, meu nome é Victor e construo páginas web</h2>
-                <h3 class="main__sub">Estou cursando Engenharia de Software e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
-                <ul class="main__list">
-                    <li>
-                        <a class="main__list___item" href="https://github.com/victobriel/" target="_blank">GitHub
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main__list___item" href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="main__list___item" href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="main__image">
-                <img class="main__image___image" src="./assets/img/me.jpg" alt="Victor photo" draggable="false">
-            </div>
-        </section>
-        <section id="aboutme" class="l-aboutme">
-            <div class="narrow center">
-                <h2>Sobre mim</h2>
-                <p class="aboutme__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
-                </p>
-                <img class="aboutme__image" src="https://github.com/victobriel.png" draggable="false">
-            </div>
-        </section>
-        <section id="skills" class="l-skills narrow center">
-            <h2 class="skills__title">Skills</h2>
-            <div class="skills__container">
-                <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/html5.svg" alt="html5 icon" draggable="false">
-                    <p class="skills__container___text">Html5</p>
-                </div>
-                <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/css3.svg" alt="css3 icon" draggable="false">
-                    <p class="skills__container___text">Css3</p>
-                </div>
-                <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/java.svg" alt="java icon" draggable="false">
-                    <p class="skills__container___text">Java</p>
-                </div>
-                <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/javascript.svg" alt="javascript icon" draggable="false">
-                    <p class="skills__container___text">Javascript</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="l-projects">
-            <div class="narrow center">
-                <h3 class="projects__title">Experiência profissional</h3>
-                <div class="projects__container">
-                    <div class="projects__list">
-                        <div class="projects__image">
-                            <img class="projects__image___image" src="./assets/img/decodificador.png" alt="decodificador">
-                            <p>passe o mouse para visualizar</p>
-                        </div>
-                        <div class="projects__text">
-                            <h4 class="projects__container___title">Decodificador de texto</h4>
-                            <p class="projects__sub">Challenger Alura Codificador</p>
-                            <div class="projects__links">
-                                <a class="projects__links___repository" href="https://github.com/victobriel/Decodificador-de-Texto" target="_blank"><i class="fa-brands fa-github"></i>Repositório</a>
-                                <a class="projects__links___demo" href="https://victobriel.github.io/Decodificador-de-Texto/" target="_blank">Ver demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__list">
-                        <div class="projects__image">
-                            <img class="projects__image___image" src="./assets/img/jogodaforca.png" alt="decodificador">
-                            <p>passe o mouse para visualizar</p>
-                        </div>
-                        <div class="projects__text">
-                            <h4 class="projects__container___title">Jogo da forca</h4>
-                            <p class="projects__sub">Challenger Alura Jogo da Forca</p>
-                            <div class="projects__links">
-                                <a class="projects__links___repository" href="https://github.com/victobriel/jogoDaForca" target="_blank"><i class="fa-brands fa-github"></i>Repositório</a>
-                                <a class="projects__links___demo" href="https://victobriel.github.io/jogoDaForca/" target="_blank">Ver demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="l-contact narrow center">
-            <img class="contact__image" src="./assets/img/contact.jpg" alt="telefone">
-            <div class="contact__container">
-                <h3>Contato</h3>
-                <p>Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-                <form class="contact__form">
-                    <div class="relative">
-                        <label class="contact__form___label" for="name">Nome</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="relative">
-                        <label class="contact__form___label" for="email">E-mail</label>
-                        <input type="mail" id="email">
-                    </div>
-
-                    <input class="contact__form___subject" type="text" id="subject" placeholder="Assunto">
-
-                    <textarea rows="5" cols="40" id="message" name="message" placeholder="Sua mensagem"></textarea>
-
-                    <input class="contact__form___button" type="submit" value="Enviar mensagem">
-                </form>
-            </div>
-        </section>
+    <main class="l-main narrow center">
+        <div class="main__container">
+            <h2 class="main__title">Olá, meu nome é Victor e sou desenvolvedor</h2>
+            <h3 class="main__sub">Tenho 24 anos. Estou bacharelando Engenharia de Software e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
+            <ul class="main__list">
+                <li class="main__list___item">
+                    <a href="https://github.com/victobriel/" target="_blank">GitHub
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                </li>
+                <li class="main__list___item">
+                    <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                </li>
+                <li class="main__list___item">
+                    <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main__image">
+            <img class="main__image___image" src="./assets/img/me.jpg" alt="Victor photo" draggable="false">
+        </div>
     </main>
+    <section id="aboutme" class="l-aboutme">
+        <div class="narrow center">
+            <h2>Sobre mim</h2>
+            <p class="aboutme__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+            </p>
+            <img class="aboutme__image" src="https://github.com/victobriel.png" draggable="false">
+        </div>
+    </section>
+    <section id="skills" class="l-skills narrow center">
+        <h2 class="skills__title">Skills</h2>
+        <div class="skills__container">
+            <div class="skills__container___item">
+                <img class="skills__container___image" src="./assets/img/html5.svg" alt="html5 icon" draggable="false">
+                <p class="skills__container___text">Html5</p>
+            </div>
+            <div class="skills__container___item">
+                <img class="skills__container___image" src="./assets/img/css3.svg" alt="css3 icon" draggable="false">
+                <p class="skills__container___text">Css3</p>
+            </div>
+            <div class="skills__container___item">
+                <img class="skills__container___image" src="./assets/img/java.svg" alt="java icon" draggable="false">
+                <p class="skills__container___text">Java</p>
+            </div>
+            <div class="skills__container___item">
+                <img class="skills__container___image" src="./assets/img/javascript.svg" alt="javascript icon" draggable="false">
+                <p class="skills__container___text">Javascript</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="l-projects">
+        <div class="narrow center">
+            <h3 class="projects__title">Experiência profissional</h3>
+            <div class="projects__container">
+                <div class="projects__list">
+                    <div class="projects__image">
+                        <img class="projects__image___image" src="./assets/img/decodificador.png" alt="decodificador">
+                        <p>passe o mouse para visualizar</p>
+                    </div>
+                    <div class="projects__text">
+                        <h4>Decodificador de texto</h4>
+                        <p class="projects__sub">Codificador e Decodificador de texto utilizando HTML5, CSS3 e Javascript</p>
+                        <div class="projects__links">
+                            <a class="projects__button" href="https://github.com/victobriel/Decodificador-de-Texto" target="_blank"><i class="fa-brands fa-github"></i>Repositório</a>
+                            <a class="projects__button" href="https://victobriel.github.io/Decodificador-de-Texto/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__list">
+                    <div class="projects__image">
+                        <img class="projects__image___image" src="./assets/img/jogodaforca.png" alt="decodificador">
+                        <p>passe o mouse para visualizar</p>
+                    </div>
+                    <div class="projects__text">
+                        <h4>Jogo da forca</h4>
+                        <p class="projects__sub">Jogo da forca utilizando HTML5, CSS3 e Javascript</p>
+                        <div class="projects__links">
+                            <a class="projects__button" href="https://github.com/victobriel/jogoDaForca" target="_blank"><i class="fa-brands fa-github"></i>Repositório</a>
+                            <a class="projects__button" href="https://victobriel.github.io/jogoDaForca/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="l-contact narrow center">
+        <div class="contact__image">
+            <img class="contact__image___image" src="./assets/img/contact.jpg" alt="telefone" draggable="false">
+        </div>
+        <div class="contact__container">
+            <h3>Contato</h3>
+            <p>Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+            <form class="contact__form">
+                <div class="relative">
+                    <label class="contact__form___label" for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="relative">
+                    <label class="contact__form___label" for="email">E-mail</label>
+                    <input type="mail" id="email">
+                </div>
+
+                <input class="contact__form___subject" type="text" id="subject" placeholder="Assunto">
+
+                <textarea rows="5" id="message" name="message" placeholder="Sua mensagem"></textarea>
+
+                <input class="contact__form___button" type="submit" value="Enviar mensagem">
+            </form>
+        </div>
+    </section>
+    <footer class="l-footer">
+        <p>Desenvolvido por <a href="https://github.com/victobriel/" target="_blank">Victor</a> - 2022</p>
+        <h3></h3>
+    </footer>
     <script type="module" src="./assets/js/js.js"></script>
 </body>
 

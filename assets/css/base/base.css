@@ -12,37 +12,17 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    opacity: .1;
-}
-
 input, textarea {
     font-family: 'Raleway', sans-serif;
 }
 
-/* body::after {
-    content: '';
-    background-image: url(../../img/bg.jpg);
-    background-size: cover;
-    background-position: fixed;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: .1;
-} */
-
 h1, h2, h3, h4, h5, h6, p, label {
     color: var(--main-font-color);
+}
+
+figcaption {
+    color: var(--main-font-color);
+    font-size: 14px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -63,4 +43,22 @@ button {
     background: transparent;
     border: none;
     color: var(--main-font-color);
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: .1;
+}
+
+.narrow {
+    max-width: 1440px;
+}
+
+.narrow.center {
+    margin: 0 auto;
 }

@@ -30,7 +30,7 @@
     <img class="bg" src="./assets/img/bg.jpg" alt="">
     <section class="l-navbar narrow center">
         <header>
-            <h3 class="navbar__title"></h3>
+            <h3 class="navbar__title">V<span style="display: inline-block; transform: rotate(20deg);">i</span>ctor</h3>
         </header>
         <nav>
             <ul class="navbar__list">
@@ -53,41 +53,52 @@
             </ul>
         </nav>
     </section>
-    <main class="l-main narrow center">
-        <div class="main__container">
-            <h2 class="main__title">Olá, meu nome é Victor e sou desenvolvedor</h2>
-            <h3 class="main__sub">Tenho 24 anos. Estou bacharelando Engenharia de Software e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
-            <ul class="main__list">
-                <li class="main__list___item">
-                    <a href="https://github.com/victobriel/" target="_blank">GitHub
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                    </a>
-                </li>
-                <li class="main__list___item">
-                    <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                    </a>
-                </li>
-                <li class="main__list___item">
-                    <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main__image">
-            <img class="main__image___image" src="./assets/img/me.jpg" alt="Victor photo" draggable="false">
+    <main class="l-main">
+        <div class="narrow center">
+            <div class="main__container">
+                <p class="main__title">Olá, meu nome é</p>
+                <p class="main__name">Victor Gabriel</p>
+                <p class="main__sub">Tenho 24 anos, sou desenvolvedor de software e atualmente faço faculdade de Engenharia de Software</p>
+                <ul class="main__list">
+                    <li class="main__list___item">
+                        <a href="https://github.com/victobriel/" target="_blank">GitHub
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </a>
+                    </li>
+                    <li class="main__list___item">
+                        <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </a>
+                    </li>
+                    <li class="main__list___item">
+                        <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </a>
+                    </li>
+                    <li class="main__list___item">
+                        <a href="https://discord.gg/QfJGhRwW8n" target="_blank">Discord
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__image">
+                <img class="main__image___image" src="./assets/img/photo-1.png" alt="Victor photo" draggable="false">
+            </div>
         </div>
     </main>
     <section id="aboutme" class="l-aboutme">
         <div class="narrow center">
             <h2>Sobre mim</h2>
             <p class="aboutme__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+                Pernambucano. Sou estudante de Engenharia de Software pela Unicesumar. Sou apaixonado por tecnologia e sei do poder de transformação que a tecnologia faz. Atualmente meu foco é o desenvolvimento web. Sou criativo, estou sempre estudando e preparado para novos desafios. Sempre motivado a continuar nesta área que faz parte de mim.
+                <br>Amo programação, amo desenvolvimento web e amo cachorros.
             </p>
-            <img class="aboutme__image" src="https://github.com/victobriel.png" draggable="false">
+            <a class="aboutme__button" href="https://github.com/victobriel?tab=repositories" target="_blank">Veja meus projetos</a>
+            <div class="aboutme__image">
+                <img class="aboutme__image___image" src="./assets/img/photo-3.png" draggable="false">
+                <figcaption>🤎🐶</figcaption>
+            </div>
         </div>
     </section>
     <section id="skills" class="l-skills narrow center">
@@ -114,11 +125,11 @@
     <section id="projects" class="l-projects">
         <div class="narrow center">
             <h3 class="projects__title">Experiência profissional</h3>
-            <div class="projects__container">
+            <div>
                 <div class="projects__list">
                     <div class="projects__image">
                         <img class="projects__image___image" src="./assets/img/decodificador.png" alt="decodificador">
-                        <p>passe o mouse para visualizar</p>
+                        <!-- <p>passe o mouse para visualizar</p> -->
                     </div>
                     <div class="projects__text">
                         <h4>Decodificador de texto</h4>
@@ -132,7 +143,7 @@
                 <div class="projects__list">
                     <div class="projects__image">
                         <img class="projects__image___image" src="./assets/img/jogodaforca.png" alt="decodificador">
-                        <p>passe o mouse para visualizar</p>
+                        <!-- <p>passe o mouse para visualizar</p> -->
                     </div>
                     <div class="projects__text">
                         <h4>Jogo da forca</h4>
@@ -166,8 +177,8 @@
                 <input class="contact__form___subject" type="text" id="subject" placeholder="Assunto">
 
                 <textarea rows="5" id="message" name="message" placeholder="Sua mensagem"></textarea>
-
-                <input class="contact__form___button" type="submit" value="Enviar mensagem">
+                <div id="form-Error"></div>
+                <input id="submit-Form" class="contact__form___button" type="submit" value="Enviar mensagem">
             </form>
         </div>
     </section>

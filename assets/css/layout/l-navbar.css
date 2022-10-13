@@ -5,10 +5,11 @@
     align-items: baseline;
 }
 
+.navbar__title::before {
+    content: '<';
+}
 .navbar__title::after {
-    content: 'Vict.r';
-    font-size: 20px;
-    font-weight: bold;
+    content: '/>';
 }
 
 footer header {
@@ -41,4 +42,5 @@ footer header {
 
 .navbar__list___item:last-child:hover {
     animation: none;
+    transform: none;
 }

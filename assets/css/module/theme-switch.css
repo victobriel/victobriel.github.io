@@ -47,6 +47,14 @@
     transition: .4s;
 }
 
+.slider.is-round {
+    border-radius: 34px;
+}
+
+.slider.is-round:before {
+    border-radius: 34px;
+}
+
 .fa-moon,
 .fa-sun {
     position: absolute;

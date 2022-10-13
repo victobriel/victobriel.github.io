@@ -6,11 +6,15 @@
 
 @media (max-width: 1024px) {
     .l-main {
-        flex-direction: column;
         padding: 1rem 0;
+    }
+    .l-main .narrow {
+        flex-direction: column;
+        align-items: center;
     }
     .main__image {
         order: -1;
+        width: 80%;
     }
     .aboutme__text {
         width: 100%;

@@ -3,6 +3,8 @@
     --main-font-color: #fff;
     --button-theme-font-color: white;
     --button-theme-color: #009DB8;
+    --button-theme-color-low: #02B7D6;
     --disabled-font-color: #393939;
     --disabled-background-color: #dcdcdc;
+    --theme-color-photo: rgba(255,255,255,.1);
 }

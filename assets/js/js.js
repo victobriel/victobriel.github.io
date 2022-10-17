@@ -4,12 +4,20 @@ const themeBtn = document.querySelector('.m-theme-switch input'),
     header = document.getElementById('l-header'),
     body = document.querySelector('body'),
     nav = document.getElementById('nav'),
-    menu = document.getElementById('menu')
+    menu = document.getElementById('menu'),
+    menuTheme = document.getElementById('menu-theme')
 
-themeBtn.addEventListener('click', () => {
+function changeTheme() {
     const html = document.querySelector('html')
     html.classList.toggle('light-mode')
-})
+    if (html.classList.contains('light-mode'))
+        menuTheme.innerHTML = '<a href="#">Tema: Light</a></li>'
+    else
+        menuTheme.innerHTML = '<a href="#">Tema: Dark</a></li>'
+}
+
+themeBtn.addEventListener('click', changeTheme)
+menuTheme.addEventListener('click', changeTheme)
 
 function toggleMenu(e) {
     if (e.type === 'touchstart') e.preventDefault()

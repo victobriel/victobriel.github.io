@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     .l-main {
-        padding: 1rem 0;
+        padding: 2rem 0 4rem;
     }
     .l-main .narrow {
         flex-direction: column;
@@ -47,6 +47,8 @@
         visibility: hidden;
         overflow-y: hidden;
         z-index: 1000;
+        text-transform: uppercase;
+        font-size: 13px;
     }
     #nav.is-active #menu {
         height: calc(100vh - 4rem - 32px);
@@ -54,8 +56,11 @@
         visibility: visible;
         overflow-y: auto;
     }
-    .menu__listitem:last-child {
+    .menu__listitem:last-child{
         display: none;
+    }
+    .menu__listitem:nth-child(5) {
+        display: block;
     }
     #nav.is-active #burguer {
         border-top-color: transparent;
@@ -83,9 +88,6 @@
     }
     .menu__listitem:hover {
         animation: none;
-    }
-    .menu__listitem:last-child {
-        width: 105px;
     }
     .fa-moon {
         left: 40px;

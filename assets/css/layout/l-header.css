@@ -51,6 +51,10 @@
     width: 85px;
 }
 
+.menu__listitem:nth-child(5) {
+    display: none;
+}
+
 .menu__listitem:last-child:hover {
     animation: none;
     transform: none;

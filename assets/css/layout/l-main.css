@@ -5,7 +5,7 @@
 .l-main .narrow {
     display: flex;
     gap: 3rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .main__container {
@@ -31,11 +31,16 @@
     line-height: 26px;
     font-weight: 100;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
 .main__list {
     display: flex;
     gap: 2rem;
+}
+
+.main__list___item {
+    font-size: 16px;
 }
 
 .main__list___item:hover {

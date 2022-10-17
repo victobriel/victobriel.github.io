@@ -11,3 +11,7 @@
 .is-invisible {
     visibility: hidden;
 }
+
+.is-active {
+    display: block;
+}

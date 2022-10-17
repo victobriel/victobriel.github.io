@@ -1,29 +1,40 @@
-.l-navbar {
+#l-header {
     padding: 2rem 0;
+}
+
+.mobile-navbar{
+    background-color: var(--button-theme-color);
+    width: 80%;
+}
+
+#l-header .narrow {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    box-sizing: border-box;
 }
 
-.navbar__title::before {
-    content: '<';
-}
-.navbar__title::after {
-    content: '/>';
-}
-
-footer header {
-    order: 1;
+.header__name::after {
+    content: 'Victor.';
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.navbar__list {
+#btn-mobile {
+    display: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#menu {
     display: flex;
     gap: 2rem;
     align-items: center;
     text-transform: lowercase;
 }
 
-.navbar__list___item:hover {
+.menu__listitem:hover {
     animation: balance .5s infinite;
 }
 
@@ -36,11 +47,11 @@ footer header {
     }
 }
 
-.navbar__list___item:last-child {
+.menu__listitem:last-child {
     width: 85px;
 }
 
-.navbar__list___item:last-child:hover {
+.menu__listitem:last-child:hover {
     animation: none;
     transform: none;
 }

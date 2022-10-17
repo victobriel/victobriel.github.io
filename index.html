@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/9e46e299e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-navbar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-header.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-about-me.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/layout/l-skills.css">
@@ -23,36 +23,39 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/theme/dark-mode.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/theme/light-mode.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/base/responsive.css">
-    <title>Portfolio</title>
+    <title>Victor Portfolio_</title>
 </head>
 
 <body>
     <img class="bg" src="./assets/img/bg.jpg" alt="">
-    <section class="l-navbar narrow center">
-        <header>
-            <h3 class="navbar__title">V<span style="display: inline-block; transform: rotate(20deg);">i</span>ctor</h3>
-        </header>
-        <nav>
-            <ul class="navbar__list">
-                <li class="navbar__list___item">
-                    <a href="#aboutme">Sobre mim</a></li>
-                <li class="navbar__list___item">
-                    <a href="#skills">Skills</a></li>
-                <li class="navbar__list___item">
-                    <a href="#projects">Projetos</a></li>
-                <li class="navbar__list___item">
-                    <a href="#contact">Contato</a></li>
-                <li class="navbar__list___item">
-                    <label class="m-theme-switch">
-                        <i class="fa-solid fa-sun"></i>
-                        <input type="checkbox" name="theme-switch"/>
-                        <span class="slider is-round"></span>
-                        <i class="fa-solid fa-moon"></i>
-                    </label>
-                </li>
-            </ul>
-        </nav>
-    </section>
+    <header id="l-header">
+        <div class="narrow center">
+            <h3 class="header__name"></h3>
+            <nav id="nav">
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="burguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li class="menu__listitem">
+                        <a href="#aboutme">Sobre mim</a></li>
+                    <li class="menu__listitem">
+                        <a href="#skills">Skills</a></li>
+                    <li class="menu__listitem">
+                        <a href="#projects">Projetos</a></li>
+                    <li class="menu__listitem">
+                        <a href="#contact">Contato</a></li>
+                    <li class="menu__listitem">
+                        <label class="m-theme-switch">
+                            <i class="fa-solid fa-sun"></i>
+                            <input type="checkbox" name="theme-switch"/>
+                            <span class="slider is-round"></span>
+                            <i class="fa-solid fa-moon"></i>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="l-main">
         <div class="narrow center">
             <div class="main__container">
@@ -164,21 +167,26 @@
         <div class="contact__container">
             <h3>Contato</h3>
             <p>Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-            <form class="contact__form">
-                <div class="relative">
-                    <label class="contact__form___label" for="name">Nome</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="relative">
-                    <label class="contact__form___label" for="email">E-mail</label>
-                    <input type="mail" id="email">
-                </div>
-
-                <input class="contact__form___subject" type="text" id="subject" placeholder="Assunto">
-
-                <textarea rows="5" id="message" name="message" placeholder="Sua mensagem"></textarea>
-                <div id="form-Error"></div>
-                <input id="submit-Form" class="contact__form___button" type="submit" value="Enviar mensagem">
+            <form name="contact" class="contact__form">
+                <fieldset class="relative">
+                    <legend class="contact__form___label" for="name">Nome</legend>
+                    <input type="text" id="name" onblur="validateName(contact.name)" required>
+                    <p id="form__name-error" class="form__message___error is-hidden"></p>
+                </fieldset>
+                <fieldset class="relative">
+                    <legend class="contact__form___label" for="email">E-mail</legend>
+                    <input type="email" id="email" onblur="validateEmail(contact.email)" required>
+                    <p id="form__email-error" class="form__message___error is-hidden"></p>
+                </fieldset>
+                <fieldset class="form__container">
+                    <input class="contact__form___subject" type="text" id="subject" placeholder="Assunto" onblur="validateSubject(contact.subject)" required>
+                    <p id="form__subject-error" class="form__message___error is-hidden"></p>
+                </fieldset>
+                <fieldset class="form__container">
+                    <textarea rows="5" id="message" name="message" placeholder="Sua mensagem" onblur="validateMessage(contact.message)" required></textarea>
+                    <p id="form__message-error" class="form__message___error is-hidden"></p>
+                </fieldset>
+                <input id="form__submit" class="contact__form___button is-disabled" type="submit" value="Enviar mensagem">
             </form>
         </div>
     </section>
@@ -186,7 +194,7 @@
         <p>Desenvolvido por <a href="https://github.com/victobriel/" target="_blank">Victor</a> - 2022</p>
         <h3></h3>
     </footer>
-    <script type="module" src="./assets/js/js.js"></script>
+    <script src="./assets/js/js.js"></script>
 </body>
 
 </html>

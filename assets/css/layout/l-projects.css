@@ -33,7 +33,7 @@
 }
 
 .projects__list:nth-child(2n) .projects__image {
-    justify-content: end;
+    justify-content: center;
 }
 
 .projects__image {

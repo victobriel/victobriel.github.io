@@ -18,9 +18,10 @@
 
 .aboutme__button {
     border: 2px solid var(--button-theme-font-color);
-    width: 145px;
+    width: 170px;
     padding: 10px;
     color: var(--button-theme-font-color);
+    box-sizing: border-box;
 }
 
 .aboutme__button:hover {

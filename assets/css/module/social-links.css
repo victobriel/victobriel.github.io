@@ -1,0 +1,7 @@
+.main__social___item:hover {
+    transform: translateY(0.3125rem);
+}
+
+.main__social___item i {
+    padding-left: .5rem;
+}

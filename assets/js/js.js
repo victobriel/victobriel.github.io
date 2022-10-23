@@ -1,4 +1,5 @@
-const themeBtn = document.querySelector('.m-theme-switch input'),
+const
+    // themeBtn = document.querySelector('.m-theme-switch input'),
     submitForm = document.getElementById('form__submit'),
     btnMobile = document.getElementById('btn-mobile'),
     header = document.getElementById('l-header'),
@@ -16,7 +17,7 @@ function changeTheme() {
         menuTheme.innerHTML = '<a href="#">Tema: Dark</a></li>'
 }
 
-themeBtn.addEventListener('click', changeTheme)
+// themeBtn.addEventListener('click', changeTheme)
 menuTheme.addEventListener('click', changeTheme)
 
 function toggleMenu(e) {
@@ -49,7 +50,7 @@ function validateName(field) {
     const formNameError = document.getElementById('form__name-error')
     if (field.value.length == 0) {
         formNameError.classList.remove('is-hidden')
-        formNameError.innerHTML = "* Nome vazio"
+        formNameError.innerHTML = "* Nome não pode estar vazio"
         return
     }
     else
@@ -65,7 +66,7 @@ function validateEmail(field) {
     const formEmailError = document.getElementById('form__email-error')
     if (field.value.length == 0){
         formEmailError.classList.remove('is-hidden')
-        formEmailError.innerHTML = "* Email vazio"
+        formEmailError.innerHTML = "* Email não pode estar vazio"
         return
     }
     let regex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
@@ -83,7 +84,7 @@ function validateSubject(field) {
     const formSubjectError = document.getElementById('form__subject-error')
     if (field.value.length == 0) {
         formSubjectError.classList.remove('is-hidden')
-        formSubjectError.innerHTML = "* Assunto vazio"
+        formSubjectError.innerHTML = "* Assunto não pode estar vazio"
         return
     }
     else
@@ -98,7 +99,7 @@ function validateMessage(field) {
     const formMessageError = document.getElementById('form__message-error')
     if (field.value.length == 0) {
         formMessageError.classList.remove('is-hidden')
-        formMessageError.innerHTML = "* Mensagem vazia"
+        formMessageError.innerHTML = "* Mensagem não pode estar vazio"
         return
     }
     else
@@ -112,7 +113,7 @@ function validateMessage(field) {
 setInterval(() => {
     if (window.screen.width > 768) {
         body.classList.remove('dark')
-        header.classList.remove('mobile-navbar')
+        // header.classList.remove('mobile-navbar')
         nav.classList.remove('is-active')
     }
     if (true)

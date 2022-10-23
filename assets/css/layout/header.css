@@ -1,0 +1,11 @@
+#header {
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+#header .narrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-sizing: border-box;
+}

@@ -1,9 +1,8 @@
 .light-mode:root {
-    --bg-main-color: #FAFAFA;
-    --main-font-color: #303030;
-    --button-theme-font-color: #303030;
-    /* --button-theme-color: #FFCC33; */
-    --button-theme-color: #E4BF51;
-    --button-theme-color-low: #F9D15A;
-    --theme-color-photo: rgba(0,0,0,.1);
+    --primary-bg-color: #FAFAFA;
+    --primary-font-color: #303030;
+    --secondary-font-color: white;
+    --primary-theme-color: #E4BF51;
+    --primary-theme-color-low: #F9D15A;
+    --secondary-theme-color: #434CDF;
 }

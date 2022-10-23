@@ -1,6 +1,8 @@
 .l-projects {
     padding: 5rem 0;
-    background-color: var(--button-theme-color);
+    background-color: var(--primary-theme-color);
+    border-radius: 20px;
+    margin: 1rem 3rem 0;
 }
 
 .projects__title {
@@ -46,9 +48,9 @@
 
 .projects__image___image {
     max-width: 80%;
-    border: dashed 1px white;
-    padding: 5px;
-    /* filter: blur(2px); */
+    border: dashed 0.0625rem white;
+    padding: 0.3125rem;
+    /* filter: blur(0.125rem); */
     cursor: pointer;
 }
 
@@ -82,15 +84,12 @@
 .projects__button {
     display: flex;
     align-items: center;
-    padding: 10px;
-    border: solid 2px var(--button-theme-font-color);
+    padding: 0.625rem;
+    border: solid 0.125rem var(--primary-font-color);
     justify-content: center;
-}
-
-.projects__button:hover {
-    transform: translateY(2px);
 }
 
 .projects__button i {
     margin-right: .5rem;
+    color: var(--primary-font-color);
 }

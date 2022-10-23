@@ -1,14 +1,13 @@
 * {
-    transition: .5s;
+    transition: .5s transform;
 }
 
-html {
-    background-size: cover;
+html, body {
+    scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--bg-main-color);
+    background-color: var(--primary-bg-color);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -25,23 +24,24 @@ input, textarea {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, label {
-    color: var(--main-font-color);
-}
-
-figcaption {
-    color: var(--main-font-color);
-    font-size: 14px;
-}
-
-h2, h3, h4, h5, h6 {
-    font-size: 32px;
-    font-weight: 700;
+i {
+    font-size: 1.25rem;
+    color: var(--secondary-font-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--main-font-color);
+    color: var(--primary-font-color);
+}
+
+h1, h2, h3, h4, h5, h6, p, label, figcaption{
+    color: var(--primary-font-color);
+   
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 ul, ol, li {
@@ -51,24 +51,16 @@ ul, ol, li {
 button {
     background: transparent;
     border: none;
-    color: var(--main-font-color);
+    color: var(--primary-font-color);
 }
 
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    opacity: .15;
+button:hover,
+[role=button]:hover {
+    transform: translateY(0.125rem);
 }
 
 .narrow {
     max-width: 80%;
-}
-
-.narrow.center {
     margin: 0 auto;
 }
 

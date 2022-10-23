@@ -6,13 +6,8 @@
     align-items: center;
 }
 
-.l-footer h3::after {
-    content: 'Vict.r';
-    font-size: 22px;
-}
-
 .l-footer p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: white;
 }
 

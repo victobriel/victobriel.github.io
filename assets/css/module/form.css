@@ -1,0 +1,30 @@
+.form input[type=email],
+.form input[type=text],
+.form textarea {
+    filter: drop-shadow(0 0 0.0625rem black);
+    border: none;
+    border-bottom: solid 1px var(--primary-font-color);
+    outline: none;
+    background-color: transparent;
+    color: var(--primary-font-color);
+    padding: 1.75rem 0.75rem 0.1875rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+.form input[type=email],
+.form input[type=text] {
+    height: 3rem;
+}
+
+.contact__form___button {
+    padding: 1.25rem 0;
+    width: 20%;
+    background-color: var(--primary-theme-color-low);
+    filter: none;
+    color: var(--primary-font-color);
+    cursor: pointer;
+    border: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}

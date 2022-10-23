@@ -1,0 +1,13 @@
+#menu {
+    display: flex;
+    gap: 3rem;
+    text-transform: lowercase;
+}
+
+.menu__listitem {
+    padding: 0.5rem;
+}
+
+.menu__listitem:nth-child(5) {
+    display: none;
+}

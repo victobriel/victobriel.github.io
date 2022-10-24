@@ -1,5 +1,3 @@
-import '../css/style.css'
-
 const
     // themeBtn = document.querySelector('.m-theme-switch input'),
     submitForm = document.getElementById('form__submit'),

@@ -1,0 +1,28 @@
+#header {
+    padding: 2rem 0;
+    margin: 0 3rem;
+    box-sizing: border-box;
+}
+
+#header .narrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-sizing: border-box;
+}
+
+#header .header__name {
+    width: min-content;
+    margin-right: 3rem;
+}
+
+#header #menu {
+    display: flex;
+    gap: 3rem;
+    text-transform: lowercase;
+    align-items: center;
+}
+
+#header .menu__listitem:nth-child(5) a:hover {
+    transform: translateX(1rem);
+}

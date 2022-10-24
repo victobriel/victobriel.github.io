@@ -1,8 +1,10 @@
+import '../css/style.css'
+
 const
     // themeBtn = document.querySelector('.m-theme-switch input'),
     submitForm = document.getElementById('form__submit'),
     btnMobile = document.getElementById('btn-mobile'),
-    header = document.getElementById('l-header'),
+    header = document.getElementById('header'),
     body = document.querySelector('body'),
     nav = document.getElementById('nav'),
     menu = document.getElementById('menu'),
@@ -80,21 +82,6 @@ function validateEmail(field) {
     }
 }
 
-function validateSubject(field) {
-    const formSubjectError = document.getElementById('form__subject-error')
-    if (field.value.length == 0) {
-        formSubjectError.classList.remove('is-hidden')
-        formSubjectError.innerHTML = "* Assunto não pode estar vazio"
-        return
-    }
-    else
-    if (field.value.length > 50) {
-        formSubjectError.classList.remove('is-hidden')
-        formSubjectError.innerHTML = "* Utilize no máximo 50 caracteres para assunto"
-    } else
-        formSubjectError.classList.add('is-hidden')
-}
-
 function validateMessage(field) {
     const formMessageError = document.getElementById('form__message-error')
     if (field.value.length == 0) {
@@ -116,8 +103,4 @@ setInterval(() => {
         // header.classList.remove('mobile-navbar')
         nav.classList.remove('is-active')
     }
-    if (true)
-        submitForm.classList.remove('is-disabled')
-    else
-        submitForm.classList.add('is-disabled')
 }, 600)

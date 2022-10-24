@@ -7,7 +7,12 @@
     position: relative;
 }
 
-#contact .narrow {
+.contact__title {
+    font-size: 3.125rem;
+    text-transform: uppercase;
+}
+
+.contact__content {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -20,24 +25,14 @@
     justify-content: space-around;
 }
 
-.contact__title {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-} 
-
-.contact__title h3 {
-    font-size: 3.125rem;
-    text-transform: uppercase;
-}
-
-.contact__title p {
+.contact__container p {
     font-size: 1.125rem;
     line-height: 1.5;
 }
 
 #contact .main__social {
     z-index: 1;
+    width: fit-content;
 }
 
 #contact .main__social___item {
@@ -53,6 +48,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    z-index: 1;
 }
 
 #contact .form__container {

@@ -10,32 +10,6 @@
     <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800;900&display=swap" >
     <script src="https://kit.fontawesome.com/9e46e299e9.js" crossorigin="anonymous"></script>
-    <!-- Base -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
-    <!-- Layouts -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/header.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/main.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/about-me.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/skills.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/projects.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/contact.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/layout/footer.css">
-    <!-- Modules / Components -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/theme-switch.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/btn-contact-me.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/logo.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/nav.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/btn-mobile.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/social-links.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/module/form.css">
-    <!-- States -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/state/is.css">
-    <!-- Themes -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/theme/dark-mode.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/theme/light-mode.css">
-    <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive/responsive.css">
     <title>Victor Portfolio_</title>
     <meta name="description" content="Portfolio de Victor, quem eu sou, todos os meus projetos, como me contatar">
 </head>
@@ -43,7 +17,7 @@
 <body>
     <header id="header">
         <div class="narrow">
-            <h3 class="header__name"></h3>
+            <h2 class="header__name"></h2>
             <nav id="nav">
                 <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                     <span id="burguer"></span>
@@ -55,13 +29,17 @@
                         <a href="#skills" role="menuitem">Skills</a></li>
                     <li class="menu__listitem" role="presentation">
                         <a href="#projects" role="menuitem">Projetos</a></li>
+                    <!-- <li class="menu__listitem" role="presentation">
+                        <a href="#contact" role="menuitem">Contato</a></li> -->
                     <li class="menu__listitem" role="presentation">
-                        <a href="#contact" role="menuitem">Contato</a></li>
-                    <li id="menu-theme" class="menu__listitem">
-                        <a href="#" role="menuitem">Tema: Dark</a></li>
-                    <li class="menu__listitem is-hidden" role="presentation">
-                        <button aria-label="Abrir menu secundário"></button>
+                        <button class="menu__secondary" aria-label="Abrir menu secundário"><i class="fa-solid fa-ellipsis-vertical"></i></button></li>
+                    <li class="menu__listitem" role="presentation">
+                        <a href="#contact" role="menuitem">Fale comigo
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </li>
+                    <li class="menu__listitem" id="menu-theme" >
+                        <a href="#" role="menuitem">Tema: Dark</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,29 +53,31 @@
                     Gabriel
                 </h1>
                 <p class="main__sub">Tenho 24 anos, sou desenvolvedor de software e atualmente faço faculdade de Engenharia de Software</p>
-                <ul class="main__social">
-                    <li class="main__social___item">
-                        <a href="https://github.com/victobriel/" target="_blank">GitHub
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                    <li class="main__social___item">
-                        <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                    <li class="main__social___item">
-                        <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                </ul>
-                <a class="main__contact" href="mailto:victorgbrielsilva@gmail.com" role="button">Contate-me
-                    <i class="main__contact___arrow fa-solid fa-arrow-right-long"></i>
-                </a>
+                <div class="main__links">
+                    <ul class="main__social">
+                        <li class="main__social___item">
+                            <a href="https://github.com/victobriel/" target="_blank">GitHub
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                        <li class="main__social___item">
+                            <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                        <li class="main__social___item">
+                            <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="main__contact" href="#contact" role="button">Contate-me
+                        <i class="main__contact___arrow fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
             </div>
             <div class="main__image">
-                <img class="main__image___image" src="./assets/img/photo-1.png" alt="Victor photo" draggable="false">
+                <img class="main__image___image" src="/photo-1.png" alt="Victor photo" draggable="false">
             </div>
         </div>
     </main>
@@ -110,7 +90,7 @@
             </p>
             <a class="aboutme__button" role="button" href="https://github.com/victobriel?tab=repositories" target="_blank">Veja meus projetos</a>
             <div class="aboutme__image">
-                <img class="aboutme__image___image" src="./assets/img/photo-3.png" draggable="false" alt="Foto de Victor com seu cachorro">
+                <img class="aboutme__image___image" src="/photo-3.png" draggable="false" alt="Foto de Victor com seu cachorro">
                 <figcaption>🤎🐶</figcaption>
             </div>
         </div>
@@ -120,32 +100,32 @@
             <h2 class="skills__title">Skills</h2>
             <div class="skills__container">
                 <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/html5.svg" alt="html5 icon" draggable="false">
+                    <img class="skills__container___image" src="/html5.svg" alt="html5 icon" draggable="false">
                     <p class="skills__container___text">Html5</p>
                 </div>
                 <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/css3.svg" alt="css3 icon" draggable="false">
+                    <img class="skills__container___image" src="/css3.svg" alt="css3 icon" draggable="false">
                     <p class="skills__container___text">Css3</p>
                 </div>
                 <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/java.svg" alt="java icon" draggable="false">
+                    <img class="skills__container___image" src="/java.svg" alt="java icon" draggable="false">
                     <p class="skills__container___text">Java</p>
                 </div>
                 <div class="skills__container___item">
-                    <img class="skills__container___image" src="./assets/img/javascript.svg" alt="javascript icon" draggable="false">
+                    <img class="skills__container___image" src="/javascript.svg" alt="javascript icon" draggable="false">
                     <p class="skills__container___text">Javascript</p>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="projects" class="l-projects">
         <div class="narrow">
-            <h3 class="projects__title">Experiência profissional</h3>
+            <h2 class="projects__title">Experiência profissional</h2>
             <div>
                 <div class="projects__list">
                     <div class="projects__image">
-                        <img class="projects__image___image" src="./assets/img/decodificador.png" alt="decodificador">
-                        <!-- <p>passe o mouse para visualizar</p> -->
+                        <img class="projects__image___image" src="/decodificador.png" alt="decodificador">
                     </div>
                     <div class="projects__text">
                         <h4>Decodificador de texto</h4>
@@ -158,8 +138,7 @@
                 </div>
                 <div class="projects__list">
                     <div class="projects__image">
-                        <img class="projects__image___image" src="./assets/img/jogodaforca.png" alt="decodificador">
-                        <!-- <p>passe o mouse para visualizar</p> -->
+                        <img class="projects__image___image" src="/jogodaforca.png" alt="decodificador">
                     </div>
                     <div class="projects__text">
                         <h4>Jogo da forca</h4>
@@ -176,54 +155,50 @@
     <section id="contact">
         <div class="bg"></div>
         <div class="narrow">
-            <div class="contact__container">
-                <div class="contact__title">
-                    <h3>Contate-me_</h3>
-                    <p>Quer entrar em contato comigo?<br>Fale comigo nas minhas redes sociais</p>
+            <h2 class="contact__title">Contate-me_</h2>
+            <div class="contact__content">
+                <div class="contact__container">
+                    <p>Quer entrar em contato comigo?<br>Fale comigo por meio das minhas redes sociais</p>
+                    <ul class="main__social">
+                        <li class="main__social___item">
+                            <a href="https://github.com/victobriel/" target="_blank">GitHub
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                        <li class="main__social___item">
+                            <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                        <li class="main__social___item">
+                            <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="main__social">
-                    <li class="main__social___item">
-                        <a href="https://github.com/victobriel/" target="_blank">GitHub
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                    <li class="main__social___item">
-                        <a href="https://www.linkedin.com/in/victorgbriel/" target="_blank">Linkedin
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                    <li class="main__social___item">
-                        <a href="https://www.instagram.com/victorcxias/" target="_blank">Instagram
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact__form">
-                <p>Preencha o formulário abaixo e eu te responderei o mais rápido possível</p>
-                <form class="form" name="contact">
-                    <fieldset class="form__container">
-                        <!-- <legend class="contact__form___label" for="name">Nome</legend> -->
-                        <input class="contact__form___item" type="text" id="name" onblur="validateName(contact.name)" placeholder="Seu nome" required>
-                        <!-- <p id="form__name-error" class="form__message___error is-hidden"></p> -->
-                    </fieldset>
-                    <fieldset class="form__container">
-                        <!-- <legend class="contact__form___label" for="email">E-mail</legend> -->
-                        <input class="contact__form___item" type="email" id="email" onblur="validateEmail(contact.email)" placeholder="Seu email" required>
-                    </fieldset>
-                    <fieldset class="form__container">
-                        <textarea rows="7" id="message" name="message" placeholder="Sua mensagem" onblur="validateMessage(contact.message)" required></textarea>
-                    </fieldset>
-                    <input role="button" id="form__submit" class="contact__form___button is-disabled" type="submit" value="Enviar">
-                </form>
+                <div class="contact__form">
+                    <p>Ou preencha o formulário abaixo e eu te responderei o mais rápido possível</p>
+                    <form class="form" name="contact">
+                        <fieldset class="form__container">
+                            <input class="contact__form___item" type="text" id="name" onblur="validateName(contact.name)" placeholder="Seu nome *" required>
+                        </fieldset>
+                        <fieldset class="form__container">
+                            <input class="contact__form___item" type="email" id="email" onblur="validateEmail(contact.email)" placeholder="Seu email *" required>
+                        </fieldset>
+                        <fieldset class="form__container">
+                            <textarea rows="7" id="message" name="message" placeholder="Sua mensagem *" onblur="validateMessage(contact.message)" required></textarea>
+                        </fieldset>
+                        <input id="form__submit" class="contact__form___button" type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="l-footer">
-        <p>Desenvolvido por <a href="https://github.com/victobriel/" target="_blank">Victor</a> - 2022</p>
-        <h3 class="header__name"></h3>
+    <footer id="footer">
+        <p>Todos os direitos reservados &copy; 2022</p>
     </footer>
-    <script src="./assets/js/js.js"></script>
+    <script type="module" src="src/js/main.js"></script>
 </body>
 
 </html>

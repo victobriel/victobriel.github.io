@@ -1,0 +1,14 @@
+.menu__secondary i {
+    color: var(--primary-font-color);
+}
+
+.menu__secondary {
+    cursor: pointer;
+    border: solid 1px var(--primary-theme-color-low-low);
+    padding: 8px 12px;
+    border-radius: 2px;
+}
+
+.menu__secondary:hover {
+    transform: none;
+}

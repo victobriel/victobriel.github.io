@@ -1,0 +1,32 @@
+.menu__listitem {
+    padding: 0.5rem;
+}
+
+.menu__listitem a::before {
+    color: var(--secondary-font-color);
+    content: '_';
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.menu__listitem:nth-child(6) {
+    display: none;
+}
+
+.menu__listitem:nth-child(5) a {
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    border: solid 2px var(--secondary-theme-color);
+    color: var(--secondary-theme-color);
+    padding: 10px 20px;
+}
+
+.menu__listitem:nth-child(5) i {
+    margin-left: 1rem;
+    color: var(--secondary-theme-color);
+}
+
+.menu__listitem:nth-child(5) a::before {
+    content: '';
+}

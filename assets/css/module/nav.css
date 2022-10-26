@@ -2,13 +2,6 @@
     padding: 0.5rem;
 }
 
-.menu__listitem a::before {
-    color: var(--secondary-font-color);
-    content: '_';
-    font-size: 30px;
-    font-weight: 900;
-}
-
 .menu__listitem:nth-child(6) {
     display: none;
 }
